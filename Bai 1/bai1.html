@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sky World Tours</title>
+    <style>
+      
+    </style>
+</head>
+ body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around; /* Căn đều các mục */
+        }
+        nav li {
+            flex: 1; /* Mỗi mục chiếm không gian đều nhau */
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: navy;
+            padding: 10px;
+            border-radius: 20px; /* Tạo hiệu ứng tròn */
+            background-color: white; /* Màu nền cho các mục menu */
+            text-align: center; /* Căn giữa chữ */
+            transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+        nav a:hover {
+            background-color: navy; /* Màu nền khi hover */
+            color: white; /* Màu chữ khi hover */
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            width: 300px;
+        }
+        h2 {
+            color: navy;
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sky World</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h2>Registration Information</h2>
+    <form>
+        <label for="title">Title:</label>
+        <select name="title" id="title" required>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+        </select><br><br>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="address">Mailing Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country"><br><br>
+
+        <label for="questions">Specific questions or requests about your tour:</label><br>
+        <textarea id="questions" name="questions" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <img src="your_image.jpg" alt="Image of a boat on the sea">
+    <p>You've arrived. Journeys as great as the destinations.</p>
+
+    <footer>
+        <p>&copy; Sky World Tours. All rights reserved.</p>
+        <p>Contact information: Student Name, Student ID, Testing date: 16 Sept 2016</p>
+    </footer>
+</body>
+</html>
